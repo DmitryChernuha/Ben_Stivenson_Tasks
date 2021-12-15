@@ -28,7 +28,7 @@ print(f'{family} {name} {lastname}')
 
 name = input()
 text = 'привествую тебя на сайте'
-print (f'{name}, {text}')
+print(f'{name}, {text}')
 
 # Упражнение 3 Площадь комнаты
 
@@ -46,7 +46,7 @@ area_in_fut = width * length
 area_in_acres = area_in_fut / SQRTFUT_SQRTACR
 print(f'Площадь Вашего садового участка составляет {round (area_in_acres, 2)} акров')
 
-# Упражнение 4 Сдаем бутылки
+# Упражнение 5 Сдаем бутылки
 BIG_BOTTLE_COAST = 0.25
 LITTLE_BOTTLE_COAST = 0.1
 bottles_little = int(input('Введите количество маленьких бутылок: '))
@@ -326,7 +326,7 @@ elif 35 < bmi <= 40:
 else:
     print('Ожирение 3 степени')
 
-Упражнение 32 Сумма цифр в числе
+# Упражнение 32 Сумма цифр в числе
 
 number = input('Enter num: ')
 num_lst = []
@@ -334,7 +334,7 @@ for i in number:
     num_lst.append(int(i))
 print(sum(num_lst))
 
-Упражнение 33 Сортировка трех чисел
+# Упражнение 33 Сортировка трех чисел
 
 a, b, c = int(input('Enter num: ')),\
           int(input('Enter num: ')),\
@@ -343,6 +343,20 @@ num_min = min(a, b, c)
 num_max = max(a, b, c)
 num_last = a + b + c - num_min - num_max
 print(num_min)
+
+# Упражнение 34 Вчеращний хлеб
+
+PRICE_BRED = 3.49
+DISCOUNT = 0.6
+yest_bred_by = int(input('Сколько буханок вчеращнего хлеба вы купили: '))
+price_yest_bred = round(PRICE_BRED - (PRICE_BRED * DISCOUNT), 2)
+all_price = yest_bred_by * price_yest_bred
+disc = PRICE_BRED * yest_bred_by - all_price
+print('Обычная цена за бухану хлеба составляет: $%0.2f' % PRICE_BRED)
+print('Цена со скидкой  за одну буханку составит: $%0.2f' % price_yest_bred)
+print('Общая стоимость вашего хлеба составит: $%0.2f' % all_price)
+print('Ваша экономия составит: $%0.2f' % disc)
+
 
 
 # Упражнение 35 Чет или нечет
